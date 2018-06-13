@@ -285,7 +285,7 @@ Nanodegree}\label{machine-learning-engineer-nanodegree}
 
 \subsection{Capstone Proposal}\label{capstone-proposal}
 
-Shehjar Kaul Tuesday 12, 2018
+Shehjar Kaul Wednesday 13, 2018
 
     \subsection{Proposal}\label{proposal}
 
@@ -497,18 +497,34 @@ probability \(p_{o,c}\) as shown below-
 
     \subsubsection{Project Design}\label{project-design}
 
-\emph{(approx. 1 page)}
+Considering the given problem of Whale Species classification, the
+following steps shall be undertaken to come up with a good model which
+can predict the species of whale with an input of a photo of its fluke-
 
-In this final section, summarize a theoretical workflow for approaching
-a solution given the problem. Provide thorough discussion for what
-strategies you may consider employing, what analysis of the data might
-be required before being used, or which algorithms will be considered
-for your implementation. The workflow and discussion that you provide
-should align with the qualities of the previous sections. Additionally,
-you are encouraged to include small visualizations, pseudocode, or
-diagrams to aid in describing the project design, but it is not
-required. The discussion should clearly outline your intended workflow
-of the capstone project.
+\begin{itemize}
+\tightlist
+\item
+  Preliminary analysis of the data (size of the picture, color scheme of
+  the picture, what do the class labels really mean etc)
+\item
+  Pre-processing the images, including the augmentation of the training
+  dataset with respect to different augmentation schemes like flipping,
+  rotating, random translating, zooming etc.
+\item
+  Splitting the training dataset into training and validation dataset
+  such that the dataset has a proportional number of images per class in
+  both sets.
+\item
+  Creating/loading a Convolutional neural model and setting the input
+  and output pipelines including the metrics and optimizers
+\item
+  Evaluating different network architectures by training with respect to
+  the metrics and choosing the best architecture giving the best metric
+  value
+\item
+  Publishing the best architecture and a short study about the
+  validation images that failed to be classified properly.
+\end{itemize}
 
 
     % Add a bibliography block to the postdoc
