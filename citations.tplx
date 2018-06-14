@@ -1,0 +1,7 @@
+
+((*- extends 'article.tplx' -*))
+
+((* block bibliography *))
+\bibliographystyle{unsrt}
+\bibliography{jupyter}
+((* endblock bibliography *))

@@ -285,7 +285,9 @@ Nanodegree}\label{machine-learning-engineer-nanodegree}
 
 \subsection{Capstone Proposal}\label{capstone-proposal}
 
-Shehjar Kaul Wednesday 13, 2018
+Shehjar Kaul
+
+Thursday 14, 2018
 
     \subsection{Proposal}\label{proposal}
 
@@ -296,20 +298,32 @@ Humpback Whale Identification Challenge (Kaggle Competition)
 The Domain of the project proposed falls into the category of image
 classification. In general, to aid the whale conservation efforts,
 scientists use an image identification tool to get information about the
-whale species based on the image of it's fluke. Image classification is
-one of the basic computer vision problems that can be solved via
-convolutional neural networks and it was first successful in classifying
-numeric digits using the LeNet architecture. Since then, there have been
-a plethora of neural network architectures developed for various
-applications. The training data in this case is very skewed with respect
-to the classes and there are a lot of classes that would need to be
-trained using augmentation techniques due to unequal distribution of
-images per class. This offers more challenge to the problem at hand and
-I intend to go through the "deeper layers" of the project to finally
-come up with an accurate classifier!
+whale species based on the image of it's fluke.
+
+Image classification is one of the basic computer vision problems that
+can be solved via Deep Learning techniques and it first became a
+mainstream with its resounding success at the ImageNet Large Scale
+Visual Recognition Challenge (ILSVRC) of 2012
+\cite{krizhevsky2012imagenet}. The algorithm then was developed by Alex
+Krizhevsky, Ilya Sutskever, and Geoffrey Hinton. Given the success of
+deep learning in the field of computer vision, almost every following
+Image recognition/classification problem was dealt using this new
+technology.
+
+Since then, there have been a plethora of neural network architectures
+developed for various applications. In my case, I find the idea of
+identifying image patterns really interesting and therefore I chose to
+develop a solution to an Image recognintion problem for my capstone
+project in this nanodegree. For the problem at hand, it is very
+challenging as one can see that the training data in this case is very
+skewed with respect to the classes and there are a lot of classes that
+would need to be trained using augmentation techniques due to unequal
+distribution of images per class. Challenges are typical in solving a
+real world problem and I intend to go through the "deeper layers" of the
+project to finally come up with an accurate classifier!
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}1}]:} \PY{k+kn}{import} \PY{n+nn}{math}
+{\color{incolor}In [{\color{incolor} }]:} \PY{k+kn}{import} \PY{n+nn}{math}
         \PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{pyplot} \PY{k}{as} \PY{n+nn}{plt}
         \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k}{as} \PY{n+nn}{pd}
         \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
@@ -323,9 +337,15 @@ come up with an accurate classifier!
     \subsubsection{Problem Statement}\label{problem-statement}
 
 Species of whales have to be classified as per the photo of their fluke.
-This is an arduous task as the classifier will have to identify
-extremely minute and unique patterns on the photo of the fluke to
-classify 4251 unique species of whales.
+Since this problem falls in the category of object classification, I
+plan to use convolutional neural network architectures to classify
+images. The inputs to this classifer would be images (maybe Grayscale or
+Colored) and the output would be a list of probabilites for all classes.
+The class with the maximum probability shall be chosen as the class
+which the image belongs to. For this particular problem, this is an
+arduous task as the classifier will have to identify extremely minute
+and unique patterns on the image of the fluke to classify 4251 unique
+species of whales, which is quite a high number of classes.
 
 Some of the examples of the fluke images from the training set is given
 below-
@@ -362,7 +382,7 @@ below-
 
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_6_0.png}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Capstone_Proposal_files/Capstone_Proposal_6_0.png}
     \end{center}
     { \hspace*{\fill} \\}
     
@@ -408,7 +428,7 @@ very imperative. Some of the analysis can be seen below-
 \end{Verbatim}
             
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_9_1.png}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Capstone_Proposal_files/Capstone_Proposal_9_1.png}
     \end{center}
     { \hspace*{\fill} \\}
     
@@ -530,5 +550,8 @@ can predict the species of whale with an input of a photo of its fluke-
     % Add a bibliography block to the postdoc
     
     
+\bibliographystyle{unsrt}
+\bibliography{jupyter}
+
     
     \end{document}
